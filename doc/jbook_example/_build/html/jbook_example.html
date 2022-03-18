@@ -206,7 +206,7 @@ bookdown (Xie, 2016)
 <em>Note: this report is adapted from (Timbers, 2020).</em></p>
 <p>Results</p>
 <div class="figure align-default">
-<img alt="../../results/horse_pops_plot.png" src="../../results/horse_pops_plot.png" />
+<img alt="_images/horse_pops_plot.png" src="_images/horse_pops_plot.png" />
 </div>
 <p>Fig. 1 Horse populations for all provinces in Canada from 1906 - 1972</p>
 <p>We can see from Fig. 1
@@ -229,99 +229,113 @@ Province over the time period visualised above to further support this hypothesi
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">horses_sd</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../results/horses_sd.csv&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">largest_sd_prov</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">horses_sd</span><span class="p">[</span><span class="s1">&#39;Province&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">glue</span><span class="p">(</span><span class="s2">&quot;largest-sd-prov&quot;</span><span class="p">,</span> <span class="n">largest_sd_prov</span><span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311,</span> in <span class="ni">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">305</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">num_allow_args</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">306</span>     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">307</span>         <span class="n">msg</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">arguments</span><span class="o">=</span><span class="n">arguments</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">308</span>         <span class="ne">FutureWarning</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">309</span>         <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span>     <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">311</span> <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:586,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">571</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">572</span>     <span class="n">dialect</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">573</span>     <span class="n">delimiter</span><span class="p">,</span>
-   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">582</span>     <span class="n">defaults</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;delimiter&quot;</span><span class="p">:</span> <span class="s2">&quot;,&quot;</span><span class="p">},</span>
-<span class="g g-Whitespace">    </span><span class="mi">583</span> <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">584</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">586</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:482,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">479</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
-<span class="g g-Whitespace">    </span><span class="mi">481</span> <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">482</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">484</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">485</span>     <span class="k">return</span> <span class="n">parser</span>
-
-<span class="nn">File ~/miniconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:811,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">808</span> <span class="k">if</span> <span class="s2">&quot;has_index_names&quot;</span> <span class="ow">in</span> <span class="n">kwds</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">809</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="ne">--&gt; </span><span class="mi">811</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/lib/python3.9/site-packages/pandas/io/parsers/readers.py:1040,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1036</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1037</span>         <span class="sa">f</span><span class="s2">&quot;Unknown engine: </span><span class="si">{</span><span class="n">engine</span><span class="si">}</span><span class="s2"> (valid options are </span><span class="si">{</span><span class="n">mapping</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span><span class="si">}</span><span class="s2">)&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1038</span>     <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span> <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span> <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/lib/python3.9/site-packages/pandas/io/parsers/c_parser_wrapper.py:51,</span> in <span class="ni">CParserWrapper.__init__</span><span class="nt">(self, src, **kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">48</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;usecols&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">usecols</span>
-<span class="g g-Whitespace">     </span><span class="mi">50</span> <span class="c1"># open handles</span>
-<span class="ne">---&gt; </span><span class="mi">51</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">54</span> <span class="c1"># Have to pass int, would break tests using TextReader directly otherwise :(</span>
-
-<span class="nn">File ~/miniconda3/lib/python3.9/site-packages/pandas/io/parsers/base_parser.py:222,</span> in <span class="ni">ParserBase._open_handles</span><span class="nt">(self, src, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">218</span> <span class="k">def</span> <span class="nf">_open_handles</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src</span><span class="p">:</span> <span class="n">FilePathOrBuffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">219</span>     <span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">220</span><span class="sd">     Let the readers open IOHandles after they are done with their potential raises.</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">222</span>     <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span>         <span class="n">src</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span>         <span class="s2">&quot;r&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">225</span>         <span class="n">encoding</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">226</span>         <span class="n">compression</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">227</span>         <span class="n">memory_map</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">228</span>         <span class="n">storage_options</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">229</span>         <span class="n">errors</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">230</span>     <span class="p">)</span>
-
-<span class="nn">File ~/miniconda3/lib/python3.9/site-packages/pandas/io/common.py:702,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">697</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">698</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
-<span class="g g-Whitespace">    </span><span class="mi">699</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
-<span class="g g-Whitespace">    </span><span class="mi">700</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">701</span>         <span class="c1"># Encoding</span>
-<span class="ne">--&gt; </span><span class="mi">702</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">703</span>             <span class="n">handle</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">704</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">706</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">707</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">708</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">709</span>     <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">710</span>         <span class="c1"># Binary mode</span>
-<span class="g g-Whitespace">    </span><span class="mi">711</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../../results/horses_sd.csv&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Saskatchewan&#39;
 </pre></div>
 </div>
-</div>
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_22d60_">
+  <thead>
+    <tr>
+      <th class="col_heading level0 col0" >Province</th>
+      <th class="col_heading level0 col1" >Std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_22d60_row0_col0" class="data row0 col0" >Saskatchewan</td>
+      <td id="T_22d60_row0_col1" class="data row0 col1" >377265.575896</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row1_col0" class="data row1 col0" >Ontario</td>
+      <td id="T_22d60_row1_col1" class="data row1 col1" >266435.317269</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row2_col0" class="data row2 col0" >Alberta</td>
+      <td id="T_22d60_row2_col1" class="data row2 col1" >266063.191824</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row3_col0" class="data row3 col0" >Manitoba</td>
+      <td id="T_22d60_row3_col1" class="data row3 col1" >122403.871037</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row4_col0" class="data row4 col0" >Quebec</td>
+      <td id="T_22d60_row4_col1" class="data row4 col1" >111411.104370</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row5_col0" class="data row5 col0" >New Brunswick</td>
+      <td id="T_22d60_row5_col1" class="data row5 col1" >22019.494316</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row6_col0" class="data row6 col0" >Nova Scotia</td>
+      <td id="T_22d60_row6_col1" class="data row6 col1" >19879.253759</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row7_col0" class="data row7 col0" >British Columbia</td>
+      <td id="T_22d60_row7_col1" class="data row7 col1" >14945.664171</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row8_col0" class="data row8 col0" >P.E.I.</td>
+      <td id="T_22d60_row8_col1" class="data row8 col1" >11355.747559</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
 </div>
 <p>Suppose we were interested in looking in more closely at the
 province with the highest spread (in terms of standard deviation)
 of horse populations. We present the standard deviations here:</p>
 <div class="figure align-default" id="horses-tbl-fig" style="width: 500px">
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_22d60_">
+  <thead>
+    <tr>
+      <th class="col_heading level0 col0" >Province</th>
+      <th class="col_heading level0 col1" >Std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_22d60_row0_col0" class="data row0 col0" >Saskatchewan</td>
+      <td id="T_22d60_row0_col1" class="data row0 col1" >377265.575896</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row1_col0" class="data row1 col0" >Ontario</td>
+      <td id="T_22d60_row1_col1" class="data row1 col1" >266435.317269</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row2_col0" class="data row2 col0" >Alberta</td>
+      <td id="T_22d60_row2_col1" class="data row2 col1" >266063.191824</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row3_col0" class="data row3 col0" >Manitoba</td>
+      <td id="T_22d60_row3_col1" class="data row3 col1" >122403.871037</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row4_col0" class="data row4 col0" >Quebec</td>
+      <td id="T_22d60_row4_col1" class="data row4 col1" >111411.104370</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row5_col0" class="data row5 col0" >New Brunswick</td>
+      <td id="T_22d60_row5_col1" class="data row5 col1" >22019.494316</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row6_col0" class="data row6 col0" >Nova Scotia</td>
+      <td id="T_22d60_row6_col1" class="data row6 col1" >19879.253759</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row7_col0" class="data row7 col0" >British Columbia</td>
+      <td id="T_22d60_row7_col1" class="data row7 col1" >14945.664171</td>
+    </tr>
+    <tr>
+      <td id="T_22d60_row8_col0" class="data row8 col0" >P.E.I.</td>
+      <td id="T_22d60_row8_col1" class="data row8 col1" >11355.747559</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
 </div>
 <p>Table 1: Standard deviation of number of horses for each province between 1940 - 1972</p>
 <p>Note that we define standard deviation (of a sample) as:</p>
@@ -331,7 +345,7 @@ of horse populations. We present the standard deviations here:</p>
 consider the sample standard deviation of the number of horses
 during the same time span as Fig. 1.</p>
 <div class="figure align-default" id="id1">
-<a class="reference internal image-reference" href="../../results/horse_pop_plot_largest_sd.png"><img alt="../../results/horse_pop_plot_largest_sd.png" src="../../results/horse_pop_plot_largest_sd.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/horse_pop_plot_largest_sd.png"><img alt="_images/horse_pop_plot_largest_sd.png" src="_images/horse_pop_plot_largest_sd.png" style="width: 200px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Horse populations for the province with the largest standard deviation</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>In <code class="xref std std-numref docutils literal notranslate"><span class="pre">Fig.</span> <span class="pre">{number}</span></code> we zoom in

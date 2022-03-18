@@ -126,7 +126,7 @@ Results
 \begin{figure}[htbp]
 \centering
 
-\noindent\sphinxincludegraphics{{../../results/horse_pops_plot}.png}
+\noindent\sphinxincludegraphics{{horse_pops_plot}.png}
 \end{figure}
 
 \sphinxAtStartPar
@@ -159,91 +159,11 @@ Province over the time period visualised above to further support this hypothesi
 
 \begin{sphinxuseclass}{cell_output}
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gt}{\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
-\PYG{n+ne}{FileNotFoundError}\PYG{g+gWhitespace}{                         }Traceback (most recent call last)
-\PYG{n}{Input} \PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{,} \PYG{o+ow}{in} \PYG{o}{\PYGZlt{}}\PYG{n}{module}\PYG{o}{\PYGZgt{}}
-\PYG{n+ne}{\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{1} \PYG{n}{horses\PYGZus{}sd} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{read\PYGZus{}csv}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{../../results/horses\PYGZus{}sd.csv}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
-\PYG{g+gWhitespace}{      }\PYG{l+m+mi}{3} \PYG{n}{largest\PYGZus{}sd\PYGZus{}prov} \PYG{o}{=} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{horses\PYGZus{}sd}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Province}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}
-\PYG{g+gWhitespace}{      }\PYG{l+m+mi}{4} \PYG{n}{glue}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{largest\PYGZhy{}sd\PYGZhy{}prov}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{largest\PYGZus{}sd\PYGZus{}prov}\PYG{p}{)}
+\PYGZsq{}Saskatchewan\PYGZsq{}
+\end{sphinxVerbatim}
 
-\PYG{n+nn}{File \PYGZti{}/miniconda3/lib/python3.9/site\PYGZhy{}packages/pandas/util/\PYGZus{}decorators.py:311,} in \PYG{n+ni}{deprecate\PYGZus{}nonkeyword\PYGZus{}arguments.\PYGZlt{}locals\PYGZgt{}.decorate.\PYGZlt{}locals\PYGZgt{}.wrapper}\PYG{n+nt}{(*args, **kwargs)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{305} \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{args}\PYG{p}{)} \PYG{o}{\PYGZgt{}} \PYG{n}{num\PYGZus{}allow\PYGZus{}args}\PYG{p}{:}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{306}     \PYG{n}{warnings}\PYG{o}{.}\PYG{n}{warn}\PYG{p}{(}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{307}         \PYG{n}{msg}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{arguments}\PYG{o}{=}\PYG{n}{arguments}\PYG{p}{)}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{308}         \PYG{n+ne}{FutureWarning}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{309}         \PYG{n}{stacklevel}\PYG{o}{=}\PYG{n}{stacklevel}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{310}     \PYG{p}{)}
-\PYG{n+ne}{\PYGZhy{}\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{311} \PYG{k}{return} \PYG{n}{func}\PYG{p}{(}\PYG{o}{*}\PYG{n}{args}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n}{kwargs}\PYG{p}{)}
-
-\PYG{n+nn}{File \PYGZti{}/miniconda3/lib/python3.9/site\PYGZhy{}packages/pandas/io/parsers/readers.py:586,} in \PYG{n+ni}{read\PYGZus{}csv}\PYG{n+nt}{(filepath\PYGZus{}or\PYGZus{}buffer, sep, delimiter, header, names, index\PYGZus{}col, usecols, squeeze, prefix, mangle\PYGZus{}dupe\PYGZus{}cols, dtype, engine, converters, true\PYGZus{}values, false\PYGZus{}values, skipinitialspace, skiprows, skipfooter, nrows, na\PYGZus{}values, keep\PYGZus{}default\PYGZus{}na, na\PYGZus{}filter, verbose, skip\PYGZus{}blank\PYGZus{}lines, parse\PYGZus{}dates, infer\PYGZus{}datetime\PYGZus{}format, keep\PYGZus{}date\PYGZus{}col, date\PYGZus{}parser, dayfirst, cache\PYGZus{}dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding\PYGZus{}errors, dialect, error\PYGZus{}bad\PYGZus{}lines, warn\PYGZus{}bad\PYGZus{}lines, on\PYGZus{}bad\PYGZus{}lines, delim\PYGZus{}whitespace, low\PYGZus{}memory, memory\PYGZus{}map, float\PYGZus{}precision, storage\PYGZus{}options)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{571} \PYG{n}{kwds\PYGZus{}defaults} \PYG{o}{=} \PYG{n}{\PYGZus{}refine\PYGZus{}defaults\PYGZus{}read}\PYG{p}{(}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{572}     \PYG{n}{dialect}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{573}     \PYG{n}{delimiter}\PYG{p}{,}
-   \PYG{p}{(}\PYG{o}{.}\PYG{o}{.}\PYG{o}{.}\PYG{p}{)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{582}     \PYG{n}{defaults}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{delimiter}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{,}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{\PYGZcb{}}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{583} \PYG{p}{)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{584} \PYG{n}{kwds}\PYG{o}{.}\PYG{n}{update}\PYG{p}{(}\PYG{n}{kwds\PYGZus{}defaults}\PYG{p}{)}
-\PYG{n+ne}{\PYGZhy{}\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{586} \PYG{k}{return} \PYG{n}{\PYGZus{}read}\PYG{p}{(}\PYG{n}{filepath\PYGZus{}or\PYGZus{}buffer}\PYG{p}{,} \PYG{n}{kwds}\PYG{p}{)}
-
-\PYG{n+nn}{File \PYGZti{}/miniconda3/lib/python3.9/site\PYGZhy{}packages/pandas/io/parsers/readers.py:482,} in \PYG{n+ni}{\PYGZus{}read}\PYG{n+nt}{(filepath\PYGZus{}or\PYGZus{}buffer, kwds)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{479} \PYG{n}{\PYGZus{}validate\PYGZus{}names}\PYG{p}{(}\PYG{n}{kwds}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{names}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{k+kc}{None}\PYG{p}{)}\PYG{p}{)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{481} \PYG{c+c1}{\PYGZsh{} Create the parser.}
-\PYG{n+ne}{\PYGZhy{}\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{482} \PYG{n}{parser} \PYG{o}{=} \PYG{n}{TextFileReader}\PYG{p}{(}\PYG{n}{filepath\PYGZus{}or\PYGZus{}buffer}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n}{kwds}\PYG{p}{)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{484} \PYG{k}{if} \PYG{n}{chunksize} \PYG{o+ow}{or} \PYG{n}{iterator}\PYG{p}{:}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{485}     \PYG{k}{return} \PYG{n}{parser}
-
-\PYG{n+nn}{File \PYGZti{}/miniconda3/lib/python3.9/site\PYGZhy{}packages/pandas/io/parsers/readers.py:811,} in \PYG{n+ni}{TextFileReader.\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{n+nt}{(self, f, engine, **kwds)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{808} \PYG{k}{if} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{has\PYGZus{}index\PYGZus{}names}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o+ow}{in} \PYG{n}{kwds}\PYG{p}{:}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{809}     \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{options}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{has\PYGZus{}index\PYGZus{}names}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{kwds}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{has\PYGZus{}index\PYGZus{}names}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]}
-\PYG{n+ne}{\PYGZhy{}\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{811} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}engine} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}make\PYGZus{}engine}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{engine}\PYG{p}{)}
-
-\PYG{n+nn}{File \PYGZti{}/miniconda3/lib/python3.9/site\PYGZhy{}packages/pandas/io/parsers/readers.py:1040,} in \PYG{n+ni}{TextFileReader.\PYGZus{}make\PYGZus{}engine}\PYG{n+nt}{(self, engine)}
-\PYG{g+gWhitespace}{   }\PYG{l+m+mi}{1036}     \PYG{k}{raise} \PYG{n+ne}{ValueError}\PYG{p}{(}
-\PYG{g+gWhitespace}{   }\PYG{l+m+mi}{1037}         \PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Unknown engine: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{engine}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ (valid options are }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{mapping}\PYG{o}{.}\PYG{n}{keys}\PYG{p}{(}\PYG{p}{)}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{)}\PYG{l+s+s2}{\PYGZdq{}}
-\PYG{g+gWhitespace}{   }\PYG{l+m+mi}{1038}     \PYG{p}{)}
-\PYG{g+gWhitespace}{   }\PYG{l+m+mi}{1039} \PYG{c+c1}{\PYGZsh{} error: Too many arguments for \PYGZdq{}ParserBase\PYGZdq{}}
-\PYG{n+ne}{\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{1040} \PYG{k}{return} \PYG{n}{mapping}\PYG{p}{[}\PYG{n}{engine}\PYG{p}{]}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{f}\PYG{p}{,} \PYG{o}{*}\PYG{o}{*}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{options}\PYG{p}{)}
-
-\PYG{n+nn}{File \PYGZti{}/miniconda3/lib/python3.9/site\PYGZhy{}packages/pandas/io/parsers/c\PYGZus{}parser\PYGZus{}wrapper.py:51,} in \PYG{n+ni}{CParserWrapper.\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{n+nt}{(self, src, **kwds)}
-\PYG{g+gWhitespace}{     }\PYG{l+m+mi}{48} \PYG{n}{kwds}\PYG{p}{[}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{usecols}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{usecols}
-\PYG{g+gWhitespace}{     }\PYG{l+m+mi}{50} \PYG{c+c1}{\PYGZsh{} open handles}
-\PYG{n+ne}{\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{51} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{\PYGZus{}open\PYGZus{}handles}\PYG{p}{(}\PYG{n}{src}\PYG{p}{,} \PYG{n}{kwds}\PYG{p}{)}
-\PYG{g+gWhitespace}{     }\PYG{l+m+mi}{52} \PYG{k}{assert} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{handles} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{k+kc}{None}
-\PYG{g+gWhitespace}{     }\PYG{l+m+mi}{54} \PYG{c+c1}{\PYGZsh{} Have to pass int, would break tests using TextReader directly otherwise :(}
-
-\PYG{n+nn}{File \PYGZti{}/miniconda3/lib/python3.9/site\PYGZhy{}packages/pandas/io/parsers/base\PYGZus{}parser.py:222,} in \PYG{n+ni}{ParserBase.\PYGZus{}open\PYGZus{}handles}\PYG{n+nt}{(self, src, kwds)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{218} \PYG{k}{def} \PYG{n+nf}{\PYGZus{}open\PYGZus{}handles}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{src}\PYG{p}{:} \PYG{n}{FilePathOrBuffer}\PYG{p}{,} \PYG{n}{kwds}\PYG{p}{:} \PYG{n+nb}{dict}\PYG{p}{[}\PYG{n+nb}{str}\PYG{p}{,} \PYG{n}{Any}\PYG{p}{]}\PYG{p}{)} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}} \PYG{k+kc}{None}\PYG{p}{:}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{219}     \PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{220}\PYG{l+s+sd}{     Let the readers open IOHandles after they are done with their potential raises.}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{221}\PYG{l+s+sd}{     \PYGZdq{}\PYGZdq{}\PYGZdq{}}
-\PYG{n+ne}{\PYGZhy{}\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{222}     \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{handles} \PYG{o}{=} \PYG{n}{get\PYGZus{}handle}\PYG{p}{(}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{223}         \PYG{n}{src}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{224}         \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{r}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{225}         \PYG{n}{encoding}\PYG{o}{=}\PYG{n}{kwds}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{encoding}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{k+kc}{None}\PYG{p}{)}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{226}         \PYG{n}{compression}\PYG{o}{=}\PYG{n}{kwds}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{compression}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{k+kc}{None}\PYG{p}{)}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{227}         \PYG{n}{memory\PYGZus{}map}\PYG{o}{=}\PYG{n}{kwds}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{memory\PYGZus{}map}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{k+kc}{False}\PYG{p}{)}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{228}         \PYG{n}{storage\PYGZus{}options}\PYG{o}{=}\PYG{n}{kwds}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{storage\PYGZus{}options}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{k+kc}{None}\PYG{p}{)}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{229}         \PYG{n}{errors}\PYG{o}{=}\PYG{n}{kwds}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{encoding\PYGZus{}errors}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{strict}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{230}     \PYG{p}{)}
-
-\PYG{n+nn}{File \PYGZti{}/miniconda3/lib/python3.9/site\PYGZhy{}packages/pandas/io/common.py:702,} in \PYG{n+ni}{get\PYGZus{}handle}\PYG{n+nt}{(path\PYGZus{}or\PYGZus{}buf, mode, encoding, compression, memory\PYGZus{}map, is\PYGZus{}text, errors, storage\PYGZus{}options)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{697} \PYG{k}{elif} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{handle}\PYG{p}{,} \PYG{n+nb}{str}\PYG{p}{)}\PYG{p}{:}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{698}     \PYG{c+c1}{\PYGZsh{} Check whether the filename is to be opened in binary mode.}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{699}     \PYG{c+c1}{\PYGZsh{} Binary mode does not support \PYGZsq{}encoding\PYGZsq{} and \PYGZsq{}newline\PYGZsq{}.}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{700}     \PYG{k}{if} \PYG{n}{ioargs}\PYG{o}{.}\PYG{n}{encoding} \PYG{o+ow}{and} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{b}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o+ow}{not} \PYG{o+ow}{in} \PYG{n}{ioargs}\PYG{o}{.}\PYG{n}{mode}\PYG{p}{:}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{701}         \PYG{c+c1}{\PYGZsh{} Encoding}
-\PYG{n+ne}{\PYGZhy{}\PYGZhy{}\PYGZgt{} }\PYG{l+m+mi}{702}         \PYG{n}{handle} \PYG{o}{=} \PYG{n+nb}{open}\PYG{p}{(}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{703}             \PYG{n}{handle}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{704}             \PYG{n}{ioargs}\PYG{o}{.}\PYG{n}{mode}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{705}             \PYG{n}{encoding}\PYG{o}{=}\PYG{n}{ioargs}\PYG{o}{.}\PYG{n}{encoding}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{706}             \PYG{n}{errors}\PYG{o}{=}\PYG{n}{errors}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{707}             \PYG{n}{newline}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{708}         \PYG{p}{)}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{709}     \PYG{k}{else}\PYG{p}{:}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{710}         \PYG{c+c1}{\PYGZsh{} Binary mode}
-\PYG{g+gWhitespace}{    }\PYG{l+m+mi}{711}         \PYG{n}{handle} \PYG{o}{=} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{handle}\PYG{p}{,} \PYG{n}{ioargs}\PYG{o}{.}\PYG{n}{mode}\PYG{p}{)}
-
-\PYG{n+ne}{FileNotFoundError}: [Errno 2] No such file or directory: \PYGZsq{}../../results/horses\PYGZus{}sd.csv\PYGZsq{}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYGZlt{}pandas.io.formats.style.Styler at 0x105a00df0\PYGZgt{}
 \end{sphinxVerbatim}
 
 \end{sphinxuseclass}\end{sphinxVerbatimOutput}
@@ -256,6 +176,14 @@ of horse populations. We present the standard deviations here:
 
 \begin{figure}[htbp]
 \centering
+\begin{sphinxVerbatimOutput}
+
+\begin{sphinxuseclass}{cell_output}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYGZlt{}pandas.io.formats.style.Styler at 0x105a00df0\PYGZgt{}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}\end{sphinxVerbatimOutput}
 \end{figure}
 
 \sphinxAtStartPar
@@ -275,7 +203,7 @@ during the same time span as Fig. 1.
 \centering
 \capstart
 
-\noindent\sphinxincludegraphics[width=200\sphinxpxdimen]{{../../results/horse_pop_plot_largest_sd}.png}
+\noindent\sphinxincludegraphics[width=200\sphinxpxdimen]{{horse_pop_plot_largest_sd}.png}
 \caption{Horse populations for the province with the largest standard deviation}\label{\detokenize{jbook_example:id1}}\end{figure}
 
 \sphinxAtStartPar

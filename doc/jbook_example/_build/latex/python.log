@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  18 MAR 2022 10:44
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  18 MAR 2022 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1319,20 +1319,9 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ] [2
 
 ]
+File: horse_pops_plot.png Graphic file (type bmp)
+<horse_pops_plot.png>
 
-LaTeX Warning: File `{../../results/horse_pops_plot}.png' not found on input line 129.
-
-! Unable to load picture or PDF file '../../results/horse_pops_plot.png'.
-<to be read again> 
-                   }
-l.129 ...hics{{../../results/horse_pops_plot}.png}
-                                                  
-? 
-
-LaTeX Warning: File `{../../results/horse_pops_plot}.png' not found on input line 129.
-
-File: ../../results/horse_pops_plot.png Graphic file (type bmp)
-<../../results/horse_pops_plot.png>
 
 ! LaTeX Error: Environment adjustwidth undefined.
 
@@ -1368,47 +1357,102 @@ l.158 \begin{sphinxVerbatimOutput}
                                   
 ? 
 
-Underfull \vbox (badness 3199) detected at line 247
- []
-
-
-Overfull \vbox (27.57794pt too high) detected at line 247
- []
-
-[1]
-Underfull \vbox (badness 10000) detected at line 247
- []
-
-
-Underfull \vbox (badness 10000) detected at line 247
- []
-
-[2]
-
 ! LaTeX Error: \begin{sphinxVerbatimOutput} on input line 158 ended by \end{adjustwidth}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.249 ...sphinxuseclass}\end{sphinxVerbatimOutput}
+l.169 ...sphinxuseclass}\end{sphinxVerbatimOutput}
                                                   
 ? 
+
+! LaTeX Error: Environment adjustwidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 \begin{sphinxVerbatimOutput}
+                                  
+? 
+
+! LaTeX Error: \begin{sphinxVerbatimOutput} on input line 179 ended by \end{adjustwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186 ...sphinxuseclass}\end{sphinxVerbatimOutput}
+                                                  
+? 
+[1]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 266.
+(Font)              scaled to size 7.00075pt on input line 194.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 266.
+(Font)              scaled to size 6.99925pt on input line 194.
+File: horse_pop_plot_largest_sd.png Graphic file (type bmp)
+<horse_pop_plot_largest_sd.png>
 
-LaTeX Warning: File `{../../results/horse_pop_plot_largest_sd}.png' not found on input line 278.
+No file python.ind.
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/script}  =>  {latin}
+>  {english/lcscript}  =>  {latin}
+>  {english/scripttag}  =>  {}
+>  {english/language}  =>  {English}
+>  {english/langtag}  =>  {ENG}
+>  {english/bcp47}  =>  {en-US}
+>  {english/hyphennames}  =>  {english,american,usenglish,USenglish}
+>  {english/direction}  =>  {LR}
+>  {english/hyphenmins}  =>  {2,3}
+>  {english/frenchspacing}  =>  {false}
+>  {english/indentfirst}  =>  {false}
+>  {english/fontsetup}  =>  {true}
+>  {english/envname}  =>  {english}
+>  {english/babelname}  =>  {american}
+>  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+[2] (./python.aux
+LaTeX Info: Redefining \rmfamily on input line 19.
+LaTeX Info: Redefining \sffamily on input line 19.
+LaTeX Info: Redefining \ttfamily on input line 19.
+)
 
-! Unable to load picture or PDF file '../../results/horse_pop_plot_largest_sd.png'.
-<to be read again> 
-                   }
-l.278 ..../results/horse_pop_plot_largest_sd}.png}
-                                                  
-? 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-! Package graphics Error: Division by 0.
 
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate
+Package rerunfilecheck Warning: File `python.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `python.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 42798 strings out of 478179
+ 991531 string characters out of 5853461
+ 1565533 words of memory out of 5000000
+ 62633 multiletter control sequences out of 15000+600000
+ 474679 words of font info for 100 fonts, out of 8000000 for 9000
+ 15 hyphenation exceptions out of 8191
+ 99i,16n,115p,744b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on python.pdf (6 pages).
