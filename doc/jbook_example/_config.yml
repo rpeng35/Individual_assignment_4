@@ -1,9 +1,19 @@
 title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
 date: "2021-11-22"
+
+format: jb-book
+root: index
+defaults:  # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: True
+chapters:
+- file: path/to/chapter1
+- file: path/to/chapter2
+
 sphinx:
   config:
     bibtex_reference_style: author_year
 execute:
   execute_notebooks: force 
-  
+bibtex_bibfiles:
+    - references.bib
